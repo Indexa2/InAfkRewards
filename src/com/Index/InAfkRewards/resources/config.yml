@@ -7,4 +7,4 @@ afk-region:
 
 reward:
   interval: 300 # Intervalo de tiempo para otorgar las recompensas en segundos.
-  command: "give {player} diamond 1"
+  command: "key giveall Koth 5"
