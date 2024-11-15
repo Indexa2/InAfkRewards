@@ -1,4 +1,4 @@
-package com.index.InAfkRewards; 
+package com.index.InAfkReward; 
 
 import org.bukkit.plugin.java.JavaPlugin;
 
