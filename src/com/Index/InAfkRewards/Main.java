@@ -7,7 +7,7 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         instance = this; 
         if (getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
-            new YourCustomPlaceholderExpansion().register();
+            new PlaceholderExpansion().register();
             getLogger().info("PlaceholderAPI hook registered!");
         } else {
             getLogger().warning("PlaceholderAPI not found! Placeholder functionality will be disabled.");
