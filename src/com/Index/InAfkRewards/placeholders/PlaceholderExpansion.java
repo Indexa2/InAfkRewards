@@ -2,7 +2,7 @@ import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-public class YourCustomPlaceholderExpansion extends PlaceholderExpansion {
+public class PlaceholderExpansion extends PlaceholderExpansion {
 
     @Override
     public @NotNull String getIdentifier() {
