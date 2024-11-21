@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.Index'
+version = '1.0'
+description = 'It consists of a reward system for staying in a specific place that you can define in the settings or in the game.'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17) 
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'me.clip:placeholderapi:2.11.3'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes(
+            'Main-Class': 'com.Index.inafkrewards.Main' 
+        )
+    }
+}
